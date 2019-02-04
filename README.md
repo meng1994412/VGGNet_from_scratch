@@ -56,7 +56,7 @@ Figure 2: Evaluation of the network, indicating 86% accuracy (SGD).
 
 After evaluating the training process, I change the training optimizer from `SGD` to `Adam` to check whether `Adam` can boost the accuracy a little bit, since `Adam` can converge faster than `SGD`.
 
-Figure 3 demonstrates the loss and accuracy curve of training and validation sets. And Figure 4 shows the evaluation of the network, which indicate a 86% accuracy.
+Figure 3 demonstrates the loss and accuracy curve of training and validation sets. And Figure 4 shows the evaluation of the network, which indicate a 88% accuracy. As we can see, the accuracy is boosted to 88% with about 2% increment due to the `Adam` optimizer.
 
 <img src="https://github.com/meng1994412/VGGNet_from_scratch/blob/master/output/9474.png" width="500">
 
@@ -64,4 +64,4 @@ Figure 3: Plot of training and validation loss and accuracy (Adam).
 
 <img src="https://github.com/meng1994412/VGGNet_from_scratch/blob/master/output/minivggnet_cifar10_evaluation_3.png" width="400">
 
-Figure 4: Evaluation of the network, indicating 86% accuracy (Adam).
+Figure 4: Evaluation of the network, indicating 88% accuracy (Adam).
