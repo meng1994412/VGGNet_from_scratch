@@ -10,6 +10,7 @@ from pipeline.callbacks import TrainingMonitor
 from keras.preprocessing.image import ImageDataGenerator
 from keras.callbacks import LearningRateScheduler
 from keras.optimizers import SGD
+from keras.optimizers import Adam
 from keras.datasets import cifar10
 import matplotlib.pyplot as plt
 import numpy as np
@@ -72,7 +73,8 @@ callbacks = [TrainingMonitor(figPath, jsonPath = jsonPath),
 
 # initialize the optimizer and model
 print("[INFO] compiling model...")
-opt = SGD(lr = INIT_LR, momentum = 0.9, nesterov = True)
+# opt = SGD(lr = INIT_LR, momentum = 0.9, nesterov = True)
+opt = Adam(lr = INIT_LR)
 model = MiniVGGNet.build(width = 32, height = 32, depth = 3, classes = 10)
 model.compile(loss = "categorical_crossentropy", optimizer = opt, metrics = ["accuracy"])
 
