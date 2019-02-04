@@ -50,7 +50,7 @@ Figure 1 demonstrates the loss and accuracy curve of training and validation set
 
 Figure 1: Plot of training and validation loss and accuracy (SGD).
 
-<img src="https://github.com/meng1994412/VGGNet_from_scratch/blob/master/output/8809.png" width="400">
+<img src="https://github.com/meng1994412/VGGNet_from_scratch/blob/master/output/minivggnet_cifar10_evaluation_2.png" width="400">
 
 Figure 2: Evaluation of the network, indicating 86% accuracy (SGD).
 
