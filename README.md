@@ -1,7 +1,7 @@
 # VGGNet from Scratch
 ## Objectives
 Implement VGG family from scratch, including MiniVGG and VGG16, and train them on CIFAR-10, and ImageNet datasets.
-* Construct MiniGoogLeNet and train the network on CIFAR-10 datasets to obtain ≥85% accuracy.
+* Construct MiniVGGNet and train the network on CIFAR-10 datasets to obtain ≥85% accuracy.
 
 ## Packages Used
 * Python 3.6
