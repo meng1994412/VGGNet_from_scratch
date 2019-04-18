@@ -13,12 +13,12 @@ class MiniVGGNet:
     @staticmethod
     def build(width, height, depth, classes):
         # initialize the model along with the input shape to be
-        # "channel_last" and the channels dimension itself
+        # "channels_last" and the channels dimension itself
         model = Sequential()
         inputShape = (height, width, depth)
         chanDim = -1
 
-        if K.image_data_format() == "channel_first":
+        if K.image_data_format() == "channels_first":
             inputShape = (depth, height, width)
             chanDim = 1
 
