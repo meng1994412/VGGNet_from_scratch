@@ -42,6 +42,10 @@ Table 1: MiniVGG architecture.
 
 The `minivggnet_cifar10.py` ([check here](https://github.com/meng1994412/VGGNet_from_scratch/blob/master/minivggnet_cifar10.py)) is responsible for training the network, evaluating the model (including plotting the loss and accuracy curve of training and validation sets, providing the classification report), and serialize the model to disk.
 
+There is a helper class:
+
+The `trainingmonitor.py` ([check here](https://github.com/meng1994412/VGGNet_from_scratch/blob/master/pipeline/callbacks/trainingmonitor.py)) under `pipeline/callbacks/` directory create a `TrainingMonitor` callback that will be called at the end of every epoch when training a network. The monitor will construct a plot of training loss and accuracy. Applying such callback during training will enable us to babysit the training process and spot overfitting early, allowing us to abort the experiment and continue trying to tune parameters.
+
 ## Results
 ### MiniVGG on CIFAR-10
 Figure 1 demonstrates the loss and accuracy curve of training and validation sets. And Figure 2 shows the evaluation of the network, which indicate a 86% accuracy. During this training process, Stochastic Gradient Descent with momentum and Nesterov acceleration is used.
